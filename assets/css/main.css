@@ -1,0 +1,26 @@
+body {
+    background: #E0E1DF;   
+}
+
+#main{
+    color: #53624E;
+}
+
+.heading{
+    font-size:75x;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.heading div span{
+    text-transform:lowercase;
+    font-style:italic;
+}
+.reserve_button,
+.reservations{
+    font-size:14px;
+}
+
+img.logo{
+    height:100px;
+}
