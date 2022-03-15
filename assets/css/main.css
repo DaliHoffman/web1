@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background:#E0E1DF;   
+    padding: 40px;
+}
+
+#main{
+    color: #53624E;
+}
+
+.heading{
+    font-size:75x;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom:1px solid #53624E;
+    margin-bottom: 40px;
+
+}
+
+.heading div{
+    border-top:1px solid #53624E;
+
+}
+
+.heading div span{
+    text-transform:lowercase;
+    font-style:italic;
+}
+
+.reserve_button,
+.reservations{
+    font-size:14px;
+}
+
+img.logo{
+    height:100px;
+} 
+
+.reserve_button{
+    text-transform: uppercase;
+    color: #E0E1DF;
+    background: #53624E;
+    padding:10;
+    display:inline-block;
+    border: 1px solid #53624E;
+}
+
+.reservations ul{
+    list-style: none;
+}
+
+.reservations ul li{
+    padding:30px;
+    border: 1px solid #53624E;
+    text-align: center;
+}
+
+img{
+    width:100%
+}
