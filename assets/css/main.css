@@ -12,8 +12,26 @@ body {
     color: #53624E;
 }
 
+.navbar{
+    padding:10px 40px;
+    position: fixed;
+    background:#E0E1DF;   
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
+    display: flex;
+    align-items: center;
+}
+
+.tree{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .heading{
-    font-size:75x;
+    margin-top:274px;
+    font-size:75px;
     text-transform: uppercase;
     text-align: center;
     border-bottom:1px solid #53624E;
@@ -23,7 +41,6 @@ body {
 
 .heading div{
     border-top:1px solid #53624E;
-
 }
 
 .heading div span{
@@ -51,12 +68,27 @@ img.logo{
 
 .reservations ul{
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 40px;
 }
 
 .reservations ul li{
     padding:30px;
     border: 1px solid #53624E;
     text-align: center;
+    position: relative;
+}
+.calendar{
+    display: none;
+    width: 200%;
+    background: red;
+    position: absolute;
+    height: 100px;
+    bottom: -100px;
+    left:0;
+    right:0;
+    z-index:1;
 }
 
 img{
