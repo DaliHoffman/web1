@@ -1,26 +1,279 @@
-body {
-    background: #E0E1DF;   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
+body {
+    background:#FFFFFF;  
+    padding: 30px;
+    
+}
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+    font-family: Display,Garamond,serif;
+    
+}
+
+h3 {
+    font-size: 15px;
+    font-family: Display,Garamond,serif;
+    font-weight: bold;
+}
+
+:root{
+    --main: red;
+}
+
+
 
 #main{
-    color: #53624E;
+    color: #F5F6F0;
 }
 
-.heading{
-    font-size:75x;
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr repeat(2, 0);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: 1px solid #CFD2CC;
+}
+    
+.logo { 
+    grid-area: 1 / 1 / 3 / 2; 
+
+}
+
+
+.filler { 
+    grid-area: 1 / 2 / 3 / 3; 
+    list-style: none;
+}
+
+.filler2:hover{
+    background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&) center center/cover no-repeat padding-box;
+    position: absolute;
+    background-size: cover;
+    background-position: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+}
+
+
+.navlist { 
+        grid-area: 1 / 3 / 3 / 4;
+    
+}
+
+.img logo {
+    width: 200%;
+}
+
+.navlist ul{
+    font-size: 100%;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
     text-transform: uppercase;
+    vertical-align: baseline;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+    
+.navlist ul li{
+    display: grid;
+    grid-template-columns: 80px 200px auto 40px;
+    padding:30px;
+    border: 1px solid #CFD2CC;
+    padding: 20px;
     text-align: center;
+}
+
+
+
+
+
+
+
+.heading div{
+    border-top:1px solid #53624E;
 }
 
 .heading div span{
     text-transform:lowercase;
     font-style:italic;
 }
-.reserve_button,
-.reservations{
-    font-size:14px;
-}
+
 
 img.logo{
     height:100px;
+} 
+
+
+img{
+    width:100%
+}
+
+.Teas {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0%;
+}
+    
+.Teac1 { 
+    grid-area: 1 / 1 / 2 / 2;
+ }
+.Teac2 { 
+    grid-area: 1 / 2 / 2 / 3;
+ }
+.Teac3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+.Teac4 { 
+    grid-area: 1 / 4 / 2 / 5;
+ }
+.Teac5 { 
+    grid-area: 1 / 5 / 2 / 6;
+ }
+
+.tealign{
+    text-align: center;
+    font-size: 100%;
+    font-weight: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: inherit;
+}
+
+.Teaimg-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+.three {
+    padding: 20px;
+    display: grid;
+    width: auto;
+    height: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+    grid-area: auto;
+    position: relative;
+
+    
+    }
+
+.centered {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+.centered2 {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+
+.centered2:hover {
+    text-decoration: underline;
+}
+
+
+
+
+    
+.three1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/about_values_f13f2034-9acd-41df-a7a3-2cae150c79ac_650x.jpg?v=1526915323&auto=format&q=50&');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+    
+   
+ }
+.three2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/DSC07022_650x.jpg?v=1526856532&auto=format&q=50&');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+    background-position: 50%;
+ }
+.three3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/home_brew_wares_650x.jpg?v=1526915416&auto=format&q=50&');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+    background-position: 50%;
+}
+
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    padding-top: 50px;
+}
+    
+.info1 { 
+    grid-area: 1 / 1 / 3 / 4; 
+    text-align: left;
+    padding-top: 50px;
+    background-color: #53624E;
+
+
+}
+
+.info2 {
+     grid-area: 1 / 4 / 2 / 7; 
+     background-color: #F9F9F7;
+
+}
+
+
+
+
+
+
+@media (max-width: 860px) and (orientation: portrait) {
+    .Teac2{
+        visibility: hidden;
+    }
+
+    .reservations{
+        display: none;
+    }
+
+    .heading div{
+        font-size: 8vw;
+    }
+
+
 }
