@@ -84,6 +84,22 @@
         </div>
 
     </div>
+
+    <script>
+        $(document).ready(function(){
+            var count = 0;
+            var content = '';
+            var j = setInterval(function () {
+                count++;
+                if(count%2===0){
+                    content = $('#sale').css();
+                }else{
+                    content = $('#steep').css();
+                }
+                $('#show').html(content);
+            }, 5000);
+        });
+        </script>
     
 
     <script src="assets/js/main.js"></script>
