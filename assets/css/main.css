@@ -47,7 +47,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #CFD2CC;
-
+    
 
     }
     
@@ -67,8 +67,27 @@ h3 {
     overflow: hidden;
     border-left: 1px solid #CFD2CC;
     border-right: 1px solid #CFD2CC;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
+.flex {
+    text-align: right;
+    list-style: none;
+}
+
+
+.flex1 {
+
+    list-style: none;
+}
+
+.overflow {
+    text-align: right;
+    overflow: hidden;
+    list-style: none;
+    width: 100%;
+}
 
 
 
@@ -407,15 +426,23 @@ img{
 
 
 
-@media (max-width: 860px) and (orientation: portrait) {
-    .teac2{
+@media (max-width: 947px) and (orientation: portrait) {
+    /*.teac2{
         visibility: hidden;
-    }
+    }*/
 
     .reservations{
         display: none;
     }
 
+    .navbar.merch.sixfont{
+        visibility: hidden;
+    }
+
+    .navbar.teasnav.sixfont{
+        visibility: hidden;
+    }
+    
     .heading div{
         font-size: 8vw;
     }
