@@ -36,7 +36,7 @@ h3 {
     color: #F5F6F0;
 }
 
-
+/* This is for the navbar which appears on both of my pages */
 .navbar {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -65,7 +65,8 @@ h3 {
     display: flex;
     width: 100%;
     overflow: hidden;
-    
+    border-left: 1px solid #CFD2CC;
+    border-right: 1px solid #CFD2CC;
 }
 
 
@@ -121,8 +122,7 @@ h3 {
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
-    border: 1px solid #CFD2CC;
-    border-width: 100%;
+    
 }
 
 .teasnav {
@@ -364,7 +364,7 @@ img{
     padding-bottom: 40px;
     border-collapse: collapse;
     vertical-align: text-top;
-    border
+
 }
 
 .footer1{
@@ -381,6 +381,28 @@ img{
 .footer4{
     grid-area: 1 / 4 / 3 / 5;
 }
+
+
+.warespage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 75%;
+    margin-top: 40px;
+    margin-left: 12.5%;
+}
+
+.margins{
+    width: 75%;
+    margin-top: 40px;
+    margin-left: 12.5%;
+}
+
+
+
+
 
 
 
