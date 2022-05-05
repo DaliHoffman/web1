@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 body {
     background:#FFFFFF;  
@@ -32,6 +31,13 @@ h4 {
     font-weight: bold;
 }
 
+h5 {
+    font-size: 18px;
+    font-family: Display,Garamond,serif;
+    font-weight: bold;
+    text-align: left;
+    
+}
 
 
 
@@ -88,9 +94,11 @@ h4 {
 
 
 .flex1 {
-
     list-style: none;
 }
+
+
+
 
 .overflow {
     text-align: right;
@@ -111,6 +119,7 @@ h4 {
     right: 0;
     bottom: 0;
     z-index: -100;
+    visibility: hidden;
 }
 
 .wholesale{
@@ -123,6 +132,8 @@ h4 {
     right: 0;
     bottom: 0;
     z-index: -100;
+    visibility: hidden;
+
 }
 
 .steep{
@@ -135,6 +146,8 @@ h4 {
     right: 0;
     bottom: 0;
     z-index: -100;
+    visibility: hidden;
+
 }
 
 .centeredhead {
@@ -157,6 +170,8 @@ h4 {
 .teasnav {
     grid-area: 1 / 4 / 2 / 5;
    display: flex;
+   border-bottom: 1px solid #CFD2CC;
+   border-right: 1px solid #CFD2CC;
 
 
 }
@@ -164,7 +179,7 @@ h4 {
 .brewwaresnav {
     grid-area: 1 / 5 / 2 / 6;
     display: flex;
-
+    
 
 
 
@@ -318,8 +333,6 @@ img{
     background-size: cover;
     align-items:center;
     justify-content:center;
-    
-   
  }
 .three2 { 
     grid-area: 1 / 2 / 2 / 3;
@@ -336,6 +349,7 @@ img{
     align-items:center;
     justify-content:center;
     background-position: 50%;
+
 }
 
 
@@ -473,12 +487,14 @@ img{
 .warespage{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-rows: repeat(4, 35vw);
+    grid-column-gap: 35px;
+    grid-row-gap: 40px;
     width: 75%;
     margin-top: 40px;
     margin-left: 12.5%;
+    margin-bottom: 50px;
+    position: relative;
 }
 
 .margins{
@@ -490,7 +506,93 @@ img{
 
 
 
+.beeswax { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/lotus_candle_updated.png?v=1526835738&auto=format&w=630&q=50');
+    background-size: contain;
+    align-items:center;
+    justify-content:center;
+ }
 
+ 
+.teacup { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/cup_candle.png?v=1526836305&auto=format&w=630&q=50');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+ }
+
+ .tealight { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/tealight.png?v=1526837456&auto=format&w=630&q=50');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+ }
+
+
+ .giftset { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/candle_gift.png?v=1526836547&auto=format&w=630&q=50');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+ }
+
+
+.bowl { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/handmade_matcha.png?v=1526838898&auto=format&w=630&q=50');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+ }
+
+ .bluebowl { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/blue_matcha_bowl.png?v=1526837664&auto=format&w=630&q=50');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+ }
+
+ .whisk { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/matcha_whisk.png?v=1526839666&auto=format&w=630&q=50');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+ }
+
+ .honey { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/honey.png?v=1526835034&auto=format&w=630&q=50');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+ }
+
+ .teaservice { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/white_service.png?v=1526842452&auto=format&w=630&q=50');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+ }
+
+ .celadon { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/celadon_service.png?v=1526843103&auto=format&w=630&q=50');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+ }
+
+ .petit { 
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/petit_teapot.jpg?v=1621350878&auto=format&w=630&q=50');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+ }
+
+ .waresdesc {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    color: #373F3D;
+}
 
 
 
