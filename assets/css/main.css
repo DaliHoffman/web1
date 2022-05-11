@@ -15,26 +15,24 @@ body {
 h1 {
     font-weight: bold;
     font-size: 60px;
-    font-family: Display,Garamond,serif;
-    
+    font-family: GT Pressura Mono,Roboto Mono,monospace;    
 }
 
 h3 {
     font-size: 15px;
-    font-family: Display,Garamond,serif;
-    font-weight: bold;
+    font-family: GT Pressura Mono,Roboto Mono,monospace;    
+
 }
 
 h4 {
     font-size: 12px;
-    font-family: Display,Garamond,serif;
-    font-weight: bold;
+    font-family: GT Pressura Mono,Roboto Mono,monospace;  
+
 }
 
 h5 {
     font-size: 18px;
-    font-family: Display,Garamond,serif;
-    font-weight: bold;
+    font-family: GT Pressura Mono,Roboto Mono,monospace;    
     text-align: left;
     
 }
@@ -63,9 +61,12 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #CFD2CC;
-    margin-bottom: 500px;
 
+    margin-bottom: 1000px;
     }
+
+
+    
     
 .logo { 
     grid-area: 1 / 1 / 3 / 2;
@@ -81,29 +82,32 @@ h5 {
     display: flex;
     width: 100%;
     overflow: hidden;
-    border-left: 1px solid #CFD2CC;
-    border-right: 1px solid #CFD2CC;
+    border: 1px solid #CFD2CC;
     padding-left: 1em;
     padding-right: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.flex {
-    text-align: right;
-    list-style: none;
-}
 
 
 .flex1 {
     list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.border {
+    border:1px solid #CFD2CC ;
+    width: 100%;
+    height: 100%;
+
 }
 
 
-
-
 .overflow {
-    text-align: right;
     overflow: hidden;
-    list-style: none;
     width: 100%;
 }
 
@@ -119,7 +123,7 @@ h5 {
     right: 0;
     bottom: 0;
     z-index: -100;
-    visibility: hidden;
+
 }
 
 .wholesale{
@@ -169,10 +173,12 @@ h5 {
 
 .teasnav {
     grid-area: 1 / 4 / 2 / 5;
-   display: flex;
-   border-bottom: 1px solid #CFD2CC;
-   border-right: 1px solid #CFD2CC;
-
+    display: flex;
+    border-bottom: 1px solid #CFD2CC;
+    border-right: 1px solid #CFD2CC;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -243,15 +249,16 @@ img{
 .teas {
     padding: 40px;
     display: grid;
+    width: 75%;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: (1, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin: 0%;
     padding-left: 40px;
     padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
+
 }
     
 .teac1 { 
@@ -283,21 +290,35 @@ img{
 .three {
     padding: 20px;
     display: grid;
-    width: auto;
-    height: 1000px;
+    width: 75%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 30vw);
     grid-column-gap: 40px;
     grid-row-gap: 0px;
-    grid-area: auto;
-    position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
+   
+}
 
-    
-    }
+.centeredmain {
+    position: relative;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+}
+
+.centeredmain h1{
+    font-size: 50;
+    margin-bottom: 35px;
+}
+
+.centeredmain h2{
+    border: #CFD2CC;
+    text-transform: uppercase;
+    font-size: large;
+}
 
 .centered {
     position: relative;
@@ -373,9 +394,6 @@ img{
     background: #f5f5f1;
     padding-top: 5%;
     padding-left: 20%;
-    margin-top: 10%;
-
-
 
 }
 
@@ -605,10 +623,6 @@ img{
         display: none;
     }
 
- 
-    .filler{
-        visibility: hidden;
-    }
     
     .heading div{
         font-size: 8vw;
