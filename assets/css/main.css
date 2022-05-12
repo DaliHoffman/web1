@@ -412,7 +412,8 @@ img{
     font-family: inherit;
     font-style: inherit;
     background: linear-gradient(to right, #f5f5f1 50%, #f9f9f7 50% );
-
+    margin-left: -40px;
+    margin-right: -40px;
 }
     
 .info1 { 
@@ -432,6 +433,39 @@ img{
      padding-left: 20%;
      margin-top: 10%;
      
+}
+
+/* This is used for the Mobile view in the footer email join*/
+.infopx {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background: #f5f5f1;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+.margin {
+    margin-bottom: 20px;
+}
+
+.email {
+    font-size: 28px;
+    color: #BCBEBA;
+}
+
+.buttonbot {
+    width: 100%;
+    text-align: center;
+    border: 2px solid #CFD2CC;
+    height: 45px;   
+    padding: 9px 20px 7px; 
+}
+
+.upperclass {
+    text-transform: uppercase;
 }
 
  .foothead ul{
@@ -642,7 +676,7 @@ img{
 
 
 
-@media (max-width: 947px) and (orientation: portrait) {
+@media (min-width: 600px) and (orientation: portrait) {
     /*.teac2{
         visibility: hidden;
     }*/
