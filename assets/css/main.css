@@ -208,7 +208,10 @@ h5 {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+}
 
+.border :hover{
+    text-decoration: underline;
 }
 
 .brewwaresnav {
@@ -279,7 +282,10 @@ img{
     padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
+}
 
+.teas :hover{
+    text-decoration: underline;
 }
     
 .teac1 { 
