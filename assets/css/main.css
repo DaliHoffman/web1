@@ -7,32 +7,31 @@
 body {
     background:#FFFFFF;  
     padding: 40px;
-    font-family: Gt Pressura Mono, Roboto Mono, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 24px;
     overflow-x: hidden;
+    color: #53624E;
 }
 h1 {
-    font-weight: bold;
-    font-size: 60px;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;    
+    font-size: 80px;
+   
 }
 
 h3 {
     font-size: 15px;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;    
+ 
 
 }
 
 h4 {
     font-size: 12px;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;  
+
 
 }
 
 h5 {
-    font-size: 18px;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;    
+    font-size: 18px; 
     text-align: left;
     
 }
@@ -60,8 +59,6 @@ h5 {
     justify-items: center;
     margin-left: auto;
     margin-right: auto;
-
-    margin-bottom: 1000px;
     }
 
 
@@ -72,8 +69,7 @@ h5 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    align-items: center;
-    
+    align-items: center;   
 }
 
 
@@ -89,8 +85,6 @@ h5 {
     border: 1px solid #CFD2CC;
     padding-left: 1em;
     padding-right: 1em;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 
@@ -114,8 +108,9 @@ h5 {
     text-decoration: underline;
 }
 
-
-
+.bordermain {
+    border:1px solid #CFD2CC ;
+}
 
 
 .border {
@@ -139,47 +134,37 @@ h5 {
     width: 100%;
 }
 
+#scroll-image{
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+}
 
 
-.sale{
-    background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/swatch-hero_2400x.jpg?v=1558564563&auto=format&q=50&) center center/cover no-repeat padding-box;
+.test{
     position: absolute;
     background-size: cover;
     background-position: 50%;
-    top: 0;
+    top: 100;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -100;
+    opacity: 0;
+
 
 }
 
 .wholesale{
     background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&=50&) center center/cover no-repeat padding-box;
-    position: absolute;
-    background-size: cover;
-    background-position: 50%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -100;
-    visibility: hidden;
-
 }
 
 .steep{
     background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&) center center/cover no-repeat padding-box;
-    position: absolute;
-    background-size: cover;
-    background-position: 50%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -100;
-    visibility: hidden;
+}
 
+.sale{
+    background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&) center center/cover no-repeat padding-box;
 }
 
 .centeredhead {
@@ -192,64 +177,48 @@ h5 {
 }
 
 .sixfont {
-    font-size: larger;
-    font-weight: bold;
+    font-size:medium;
     text-transform: uppercase;
     text-align: left;  
+}
+
+.padding{
+    padding-bottom: 15px;
 }
 
 
 
 .teasnav {
-    grid-area: 1 / 4 / 2 / 5;
     display: flex;
-    border-bottom: 1px solid #CFD2CC;
-    border-right: 1px solid #CFD2CC;
     width: 75%;
+}
+
+.marginauto{
     margin-left: auto;
     margin-right: auto;
 }
 
-.border :hover{
-    text-decoration: underline;
-}
+
 
 .brewwaresnav {
-    grid-area: 1 / 5 / 2 / 6;
-    display: flex;
-    
+    display: flex;   
 }
 
 .cart {
-    grid-area: 1 / 6 / 2 / 7; 
     display: flex;
-
 }
 
 .merch {
-    grid-area: 2 / 4 / 3 / 5;
     display: flex;
-
 }
 
 .aboutus {
-    grid-area: 2 / 5 / 3 / 6;
     display: flex;
-
-
-
 }
 
 .wholesalenav {
-    grid-area: 2 / 6 / 3 / 7;
     display: flex;
-
-
 }
-
-
-
-
 
 
 
@@ -261,7 +230,6 @@ h5 {
     text-transform:lowercase;
     font-style:italic;
 }
-
 
 
 
@@ -288,21 +256,7 @@ img{
     text-decoration: underline;
 }
     
-.teac1 { 
-    grid-area: 1 / 1 / 2 / 2;
- }
-.teac2 { 
-    grid-area: 1 / 2 / 2 / 3;
- }
-.teac3 { 
-    grid-area: 1 / 3 / 2 / 4; 
-}
-.teac4 { 
-    grid-area: 1 / 4 / 2 / 5;
- }
-.teac5 { 
-    grid-area: 1 / 5 / 2 / 6;
- }
+
 
 .tealign{
     text-align: center;
@@ -334,7 +288,7 @@ img{
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000000;
+    color: hsl(0, 0%, 100%);
 }
 
 .centeredmain h1{
@@ -377,14 +331,12 @@ img{
 
     
 .three1 { 
-    grid-area: 1 / 1 / 2 / 2;
     background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/about_values_f13f2034-9acd-41df-a7a3-2cae150c79ac_650x.jpg?v=1526915323&auto=format&q=50&');
     background-size: cover;
     align-items:center;
     justify-content:center;
  }
 .three2 { 
-    grid-area: 1 / 2 / 2 / 3;
     background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/DSC07022_650x.jpg?v=1526856532&auto=format&q=50&');
     background-size: cover;
     align-items:center;
@@ -392,7 +344,6 @@ img{
     background-position: 50%;
  }
 .three3 { 
-    grid-area: 1 / 3 / 2 / 4; 
     background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/home_brew_wares_650x.jpg?v=1526915416&auto=format&q=50&');
     background-size: cover;
     align-items:center;
@@ -400,6 +351,8 @@ img{
     background-position: 50%;
 
 }
+
+
 
 
 .info {
@@ -533,25 +486,21 @@ img{
 }
     
 .fb1 { 
-    grid-area: 1 / 1 / 5 / 2;
     display: flex; 
 }
 
 
 .fb2 { 
-    grid-area: 1 / 2 / 5 / 3;
     display: flex; 
 }
 
 
 .fb3 { 
-    grid-area: 1 / 3 / 5 / 4; 
     display: flex;
 }
 
 
 .fb4 { 
-    grid-area: 1 / 4 / 5 / 5; 
     display: flex;
 }
 
@@ -675,12 +624,39 @@ img{
 }
 
 
+.navbar2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 75%;
+    align-items: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    margin-bottom: 1000px;
+    }
 
-@media (min-width: 600px) and (orientation: portrait) {
-    /*.teac2{
-        visibility: hidden;
-    }*/
 
+  
+
+
+
+
+
+@media (max-width: 1000px) and (orientation: portrait) {
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 75%;
+        align-items: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px;
+        margin-bottom: 1000px;
+    }
     .reservations{
         display: none;
     }
