@@ -4,7 +4,7 @@ startImageTransition();
  
         let images = document.getElementsByClassName("test");
 
-        let change = new Array();
+        
         
 
  
@@ -58,6 +58,6 @@ startImageTransition();
                         resolve();
                     }
                 }
-            })
+            });
         }
     }
