@@ -143,26 +143,33 @@ h5 {
 
 .test{
     position: absolute;
+    display: block;
     background-size: cover;
     background-position: 50%;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -100;
+    
     opacity: 1;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-top: -50px;
+    
 
 }
 
 .wholesale{
-    background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&=50&) center center/cover no-repeat padding-box;
+    background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&=50&);
 }
 
 .steep{
-    background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&) center center/cover no-repeat padding-box;
+    background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&) /*center center/cover no-repeat padding-box*/;
 }
 
 .sale{
-    background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&) center center/cover no-repeat padding-box;
+    background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/swatch-hero_2400x.jpg?v=1558564563&auto=format&q=50&) /*center center/cover no-repeat padding-box*/;
 }
 
 .centeredhead {
