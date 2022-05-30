@@ -7,7 +7,7 @@
 body {
     background:#FFFFFF;  
     padding: 40px;
-    font-family: GT-Pressura, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: GT Pressura Mono, Roboto Mono,monospace;
     font-size: 16px;
     line-height: 24px;
     overflow-x: hidden;
@@ -47,6 +47,7 @@ h5 {
 
 #main{
     color: #F5F6F0;
+    font-family: GT Pressura Mono, Roboto Mono,monospace;
 }
 
 /* This is for the navbar which appears on both of my pages */
@@ -150,15 +151,39 @@ h5 {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -100;
-    
+    z-index: -100;   
     opacity: 1;
     margin-left: -40px;
     margin-right: -40px;
-    margin-top: -50px;
-    
-
+    margin-top: -50px; 
+    margin-bottom: 50px;   
 }
+
+.testmain {
+    position: relative;
+    font-family: Louize Display,Garamond,serif;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #373f3d;
+}
+.testmain h1{
+    font-size: 80;
+    margin-bottom: 90px;
+}
+.mb2{
+    margin-bottom: 40px;
+    z-index: 100;
+}
+
+.testmain h2{
+    border: #CFD2CC;
+    text-transform: uppercase;
+    font-size: large;
+    z-index: 100;
+}
+
 
 .wholesale{
     background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&=50&);
@@ -267,7 +292,7 @@ img{
     text-align: center;
     font-size: 100%;
     font-weight: inherit;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: GT Pressura Mono, Roboto Mono,monospace;
     font-style: inherit;
 }
 
@@ -285,7 +310,7 @@ img{
     margin-right: auto;
    
 }
-
+/* This is used for the 3 images used in the Teas, Merch and Wares part on the home page*/
 .centeredmain {
     position: relative;
     font-family: Louize Display,Garamond,serif;

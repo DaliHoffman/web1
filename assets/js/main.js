@@ -15,7 +15,7 @@ startImageTransition();
  
         let cur = images.length - 1;
  
-        setInterval(changeImage, 3000);
+        setInterval(changeImage, 6000);
  
         async function changeImage() {
            
@@ -35,6 +35,10 @@ startImageTransition();
             images[cur].style.opacity = 1;
 
             cur = nextImage;
+
+            if (top == -75) {
+                top = 100;
+            }
             
         }
  
