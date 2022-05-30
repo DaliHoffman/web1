@@ -174,14 +174,14 @@ h5 {
 }
 .mb2{
     margin-bottom: 40px;
-    z-index: 100;
+    
 }
 
 .testmain h2{
     border: #CFD2CC;
     text-transform: uppercase;
     font-size: large;
-    z-index: 100;
+    
 }
 
 
@@ -284,6 +284,11 @@ img{
 
 .teas :hover{
     text-decoration: underline;
+}
+
+.teas li{
+    width: 20%;
+    display: inline-block;
 }
     
 
