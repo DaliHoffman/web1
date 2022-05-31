@@ -1,45 +1,40 @@
 startImageTransition();
- 
+
     function startImageTransition() {
  
         let images = document.getElementsByClassName("test");   // Selects the classes named test and assigns them to images
 
-        
+        let top = -100; 
         // Set opacity of all images to 1
         for (let i = 0; i < images.length; ++i) {          
             images[i].style.opacity = 1;
         }
  
-        let top = -100;  // sets the 
+         // sets the 
  
  
         let cur = images.length - 1;
  
-        setInterval(changeImage, 6000);
+        setInterval(changeImage, 3000);
  
         async function changeImage() {
            
+            top = top + 1;
             let nextImage = (1 + cur) % images.length;
 
-            images[cur].style.zIndex = top + 1;
+            images[cur].style.zIndex = top + 20;
             images[nextImage].style.zIndex = top;
 
             await transition();
 
             images[cur].style.zIndex = top;
  
-            images[nextImage].style.zIndex = top + 1;
- 
-            top = top + 1;
+            images[nextImage].style.zIndex = top + 20;          
  
             images[cur].style.opacity = 1;
 
             cur = nextImage;
-
-            if (top == -75) {
-                top = 100;
-            }
-            
+          
         }
  
         let stops = document.querySelectorAll("overflow");
@@ -66,7 +61,6 @@ startImageTransition();
  
                 let id = setInterval(changeOpacity, 10);
  
-
                 function changeOpacity() {
                     images[cur].style.opacity -= del;
                     if (images[cur].style.opacity <= 0) {
