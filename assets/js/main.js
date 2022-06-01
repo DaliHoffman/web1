@@ -53,6 +53,16 @@ startImageTransition();
             }, false);
         });
 
+        $(".test").hover(
+            function() {
+                $(this).addClass('hovered');
+            }, function() {
+                if(!$(this).hasClass('clicked') ){
+                    $(this).removeClass('hovered');
+                }
+            }
+        );
+
 
         function transition() {
             return new Promise(function (resolve, reject) {
