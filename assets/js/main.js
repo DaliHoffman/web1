@@ -57,7 +57,7 @@ startImageTransition();
             }, false);
         });
 
-        $(".test").hover(
+       /* $(".test").hover(
             function() {
                 $(this).addClass('hovered');
             }, function() {
@@ -65,7 +65,7 @@ startImageTransition();
                     $(this).removeClass('hovered');
                 }
             }
-        );
+        );*/
 
 
         function transition() {
