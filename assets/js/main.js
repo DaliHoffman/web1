@@ -15,7 +15,7 @@ startImageTransition();
  
         let cur = images.length - 1;
  
-        setInterval(changeImage, 3000);
+        setInterval(changeImage, 5000);     // Waits 5 seconds, then initiates the changeImage function
  
         async function changeImage() {
            
@@ -34,6 +34,10 @@ startImageTransition();
             images[cur].style.opacity = 1;
 
             cur = nextImage;
+
+            if (top > -40) {  //resets Z-Index to keep the background image in the back of the screen
+                top = -100;
+            }
           
         }
  
