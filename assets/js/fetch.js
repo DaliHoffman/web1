@@ -2,7 +2,7 @@ const BASE_URL = "https://api.unsplash.com/";  //Unsplasj api login
 let titles = ["Black", "Green", "White", "Tisanes", "Blends"];
 let ul = document.createElement("ul");
 
-fetch(`${BASE_URL}/search/photos/?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=tea-leaves/content_filter=orange`)              //Swallowtail Tea API request
+fetch(`${BASE_URL}/search/photos/?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=tea-leaves/content_filter=orange/0&_limit=5`)              //Swallowtail Tea API request
 .then(response => response.json())     //Parsed using JSON
 .then(d => { 
     console.log(d);                   //then data is called
