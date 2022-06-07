@@ -458,7 +458,6 @@ img{
  .foothead {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     border-bottom:1px solid var(--mainlight); 
@@ -471,34 +470,11 @@ img{
 }
     
 .fh1 { 
-    grid-area: 1 / 1 / 3 / 2;
     display: flex; 
     margin-bottom: 15px;
 }
 
 
-.fh2 { 
-    grid-area: 1 / 2 / 3 / 3;
-    display: flex;
-    margin-bottom: 15px;
-
-}
-
-
-.fh3 { 
-    grid-area: 1 / 3 / 3 / 4; 
-    display: flex;
-    margin-bottom: 15px;
-
-}
-
-
-.fh4 { 
-    grid-area: 1 / 4 / 3 / 5; 
-    display: flex;
-    margin-bottom: 15px;
-
-}
 
 .footbod {
     display: grid;
