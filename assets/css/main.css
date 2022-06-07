@@ -468,12 +468,6 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
-    
-.fh1 { 
-    display: flex; 
-    margin-bottom: 15px;
-}
-
 
 
 .footbod {
@@ -490,24 +484,6 @@ img{
     margin-right: auto;
 }
     
-.fb1 { 
-    display: flex; 
-}
-
-
-.fb2 { 
-    display: flex; 
-}
-
-
-.fb3 { 
-    display: flex;
-}
-
-
-.fb4 { 
-    display: flex;
-}
 
 .footbod ul{
     list-style: none;
