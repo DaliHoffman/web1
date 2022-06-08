@@ -1,0 +1,1 @@
+exports.index = (req, res) => res.render('api',{title:"users"})
