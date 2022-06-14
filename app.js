@@ -1,7 +1,10 @@
 const express = require('express')
+const expressLayouts = require('express-ejs-layouts')
+
+const index_router = require('./routes/index')
+const products_router = require('./routes/products')
 const app = express()
 const PORT = 3000
-const expressLayouts = require('express-ejs-layouts')
 
 // note Error: Cannot find module 'ejs' means npm install neccessarry
 //All of the using files //setup goes here
@@ -18,8 +21,6 @@ app.use(expressLayouts)
 
 //routes go here
 
-const index_router = require('./routes/index')
-const products_router = require('./routes/products')
 
 //routes go here
 
