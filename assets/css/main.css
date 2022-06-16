@@ -75,7 +75,7 @@ h5 {
 
 
 /* Used in the navbar for the list and hiding overflow for when changing the size of the navbar to hide the excess full stops */
-.filler { 
+.navbar3list { 
     grid-area: 1 / 2 / 3 / 4;
     display: flex;
     width: 100%;
@@ -92,11 +92,11 @@ h5 {
     justify-content: center;
 }
 
-.filler li{
+.navbar3list li{
     opacity: .4;
     transition: opacity .5s ease;   
 }
-.filler li:hover{
+.navbar3list li:hover{
     opacity: 1;
 }
 

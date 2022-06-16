@@ -1,7 +1,7 @@
 const router = require("express").Router()
-let products_controller = require("../controllers/products")
+let wares_controller = require("../controllers/wares")
 
-router.get("/", products_controller.index)
+router.get("/", wares_controller.index)
 
 router.get('/wares', (req, res) => {  //incoming request, outgoing response
     // what should happen??
