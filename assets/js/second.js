@@ -3,8 +3,11 @@ const FILTERCOLOR = "content_filter=black_and_white";
 const PORTRAIT = "portrait"
 let wares = document.querySelector("#warespage");
 let description = ["Beeswax Lotus Candle", "Teacup-shaped Beeswax Tealight", "Beeswax Tealight", "Beeswax Tealight Gift Set", "Hand-made Matcha Bowl", "Blue-Glazed Matcha Bowl", "Matcha whisk", "Local Honey", "White Porcelain Gaiwan Tea Service", "Celadon Gaiwan Tea Service", "Petit Teapot"];
+
+//Three seperate Arrays used to change images on hover then put them back once the mouse leaves the image
 let hovers = new Array();
 let children = new Array();
+let after = new Array();
 
 
 
@@ -15,44 +18,36 @@ fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sR
       let teasimg = document.createElement("div");  //creates a
       teasimg.classList.add("tealight");
       teasimg.style.backgroundImage =  `url(${r["urls"]["regular"]})`;   
-      
-
+      after[i] = `url(${r["urls"]["regular"]})`;
       let product_title = document.createElement("div");
       product_title.innerHTML = description[i];
       product_title.classList.add("product_title");
       teasimg.append(product_title);
-
-
       wares.append(teasimg);
     });      
       fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=biscuits`)              //Swallowtail Tea API request
-      .then(response => response.json())     //Parsed using JSON
-      .then(d => {                            //then data is called
+      .then(response => response.json())                                                                                    //Parsed using JSON
+      .then(d => {                                                                                                          //then data is called
         let children = wares.querySelectorAll(".tealight");
-      d["results"].forEach((r, i) => {       //Data is an array so forEach through
+      d["results"].forEach((r, i) => {                                                                                      //Data is an array so forEach through
           console.log(d);          
-          //children[i] = wares.children[i];
           hovers[i] = `url(${r["urls"]["regular"]})`;
       });
       console.log(children);      
       children.forEach((e, i) => {
-          e.addEventListener("mouseover", function (event) {         // Checks if hovering over the code removes all of the active classes and adds it to the one  which has a hover
+          e.addEventListener("mouseover", function (event) {                                                                 // Checks if hovering over the code removes all of the active classes and adds it to the one  which has a hover
               children.forEach(e =>{
                   e.classList.remove("active")                                 
               });
               e.classList.add("active");
-              //if (e.classList.contains("active")) {
-                e.style.fontSize = "100px";
-                 // e.style.background = "url('hello.jpg')"
-                  e.style.background = `url(${hovers[i]})`; 
-                  console.log(hovers[i]);
-                  console.log(e);            
+                  e.style.backgroundImage = hovers[i];            
               //}               
-          });
-      
-          /*e.addEventListener("mouseleave", function(event){        // Removes the mouse active class when the mouse isnt hovering over the text
+          });     
+          e.addEventListener("mouseleave", function(event){        // Removes the mouse active class when the mouse isnt hovering over the text
               e.classList.remove("active");
-          }, false);*/
+              e.style.backgroundImage = after[i];
+          }, false);
       });
   });
 });
+
