@@ -23,6 +23,11 @@ fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sR
       product_title.innerHTML = description[i];
       product_title.classList.add("product_title");
       teasimg.append(product_title);
+      let button = document.createElement("button")
+      button.classList.add("buttonproducts");
+      button.classList.add("topright");
+      button.innerHTML = ("+    ADD");
+      teasimg.append(button);
       wares.append(teasimg);
     });      
       fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=biscuits`)              //Swallowtail Tea API request

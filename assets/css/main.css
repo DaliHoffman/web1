@@ -91,6 +91,9 @@ h5 {
     display: flex;
     justify-content: center;
 }
+.flex2{
+    display: flex;
+}
 
 .navbar3list li{
     opacity: .4;
@@ -470,6 +473,10 @@ img{
     margin-right: auto;
 }
 
+.topright{
+    float: right;
+    padding-right: 20px;
+}
 
 .footbod {
     display: grid;
@@ -514,22 +521,36 @@ img{
     margin-left: 12.5%;
 }
 
-
-
-
-.beeswax { 
-    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/products/lotus_candle_updated.png?v=1526835738&auto=format&w=630&q=50');
-    background-size: contain;
-    align-items:center;
-    justify-content:center;
- }
-
-
+.buttonproducts {
+	box-shadow:inset 0px 1px 0px 0px #f5f5f1;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#f5f5f1;
+	border-radius:1px;
+	border:2px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Verdana;
+	font-size:16px;
+	font-weight:bold;
+	padding:13px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #f5f5f1;;
+}
+.buttonproducts:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.buttonproducts:active {
+	position:relative;
+	top:1px;
+}
 
  .tealight { 
     background-size: cover;
     align-items:center;
     justify-content:center;
+    flex-direction: row;
  }
 
  .tealight image:hover { 
@@ -537,7 +558,10 @@ img{
  }
 
  .product_title{
+    left: 2em;
+    flex-direction: row;
     font: size 16px;
+    color: #F5F6F0;
     font-weight: bold;
     font-family: inherit;
     padding-top: 15px;
@@ -567,7 +591,9 @@ img{
     margin-right: auto;
     padding: 40px;
     margin-bottom: 1000px;
+    visibility: hidden;
     }
+    
 
 
   
@@ -576,24 +602,17 @@ img{
 
 
 
-@media (max-width: 1000px) and (orientation: portrait) {
+@media (max-width: 1000px) {
     .navbar{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        width: 75%;
-        align-items: center;
-        justify-items: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 40px;
-        margin-bottom: 1000px;
+        visibility: hidden;
+    }
+    .navbar2{
+        visibility: visible;
     }
     .reservations{
         display: none;
     }
-
-    
+   
     .heading div{
         font-size: 8vw;
     }
