@@ -599,7 +599,7 @@ img{
   
 
 
-
+/* Responsiveness for when the width is set at a maximum of 1000px */
 
 
 @media (max-width: 1000px) {
@@ -608,14 +608,39 @@ img{
     }
     .navbar2{
         visibility: visible;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+
     }
     .reservations{
         display: none;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .teas p{
+        font-size: 16px;
     }
    
     .heading div{
         font-size: 8vw;
     }
 
+    .teas{
+        width: auto;
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-left: -12px;
+        margin-right: -12px;
+    }
 
 }
