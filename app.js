@@ -3,9 +3,10 @@ const expressLayouts = require('express-ejs-layouts')
 
 const compression = require('compression')
 const index_router = require('./routes/index')
+const PORT = process.env.PORT || 3000
 const wares_router = require('./routes/wares')
 const app = express()
-const PORT = 3000
+
 
 // note Error: Cannot find module 'ejs' means npm install neccessarry
 //All of the using files //setup goes here
