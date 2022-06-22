@@ -2,7 +2,7 @@ const BASE_URL = "https://api.unsplash.com/";                 //Unsplasj api log
 const FILTERCOLOR = "content_filter=black_and_white";
 const PORTRAIT = "portrait"
 let wares = document.querySelector("#warespage");
-let description = ["Beeswax Lotus Candle", "Teacup-shaped Beeswax Tealight", "Beeswax Tealight", "Beeswax Tealight Gift Set", "Hand-made Matcha Bowl", "Blue-Glazed Matcha Bowl", "Matcha whisk", "Local Honey", "White Porcelain Gaiwan Tea Service", "Celadon Gaiwan Tea Service", "Petit Teapot"];
+let description = ["Beeswax Lotus Candle", "Teacup-shaped Beeswax", "Beeswax Tealight", "Beeswax Tealight Gift Set", "Hand-made Matcha Bowl", "Blue-Glazed Matcha Bowl", "Matcha whisk", "Local Honey", "White Porcelain Gaiwan Tea", "Celadon Gaiwan Tea", "Petit Teapot"];
 
 //Three seperate Arrays used to change images on hover then put them back once the mouse leaves the image
 let hovers = new Array();
@@ -28,6 +28,9 @@ fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sR
       button.classList.add("topright");
       button.innerHTML = ("+    ADD");
       teasimg.append(button);
+      price = document.createElement("p");
+      price.innerHTML = "$" +  Math.floor(Math.random() * 100) + 1; 
+      teasimg.append(price);     
       wares.append(teasimg);
     });      
       fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=biscuits`)              //Swallowtail Tea API request
