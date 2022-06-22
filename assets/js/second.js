@@ -1,4 +1,8 @@
-const BASE_URL = "https://api.unsplash.com/";                 //Unsplasj api login
+/* The following Script is used throughout the grid on the Wares page 
+ It is used to populate the page with images, descriptions and a purchase button 
+ The script also changes the images on hover and sets them back to the original once the mouse leaves the chosen image*/
+ 
+const BASE_URL = "https://api.unsplash.com/";                 
 const FILTERCOLOR = "content_filter=black_and_white";
 const PORTRAIT = "portrait"
 let wares = document.querySelector("#warespage");
@@ -10,8 +14,10 @@ let children = new Array();
 let after = new Array();
 
 
+// Fetching image Urls from the unsplash api, then adding descriptions on what is featured on the images.
+//A button and a random price is also added to each image
 
-fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=tea-leaves/${FILTERCOLOR}/high`)              //Swallowtail Tea API request
+fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=tea-leaves/${FILTERCOLOR}/high`)             
 .then(response => response.json())     //Parsed using JSON
 .then(d => {                            //then data is called
     d["results"].forEach((r, i) => {       //Data is an array so forEach through
@@ -29,29 +35,30 @@ fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sR
       button.innerHTML = ("+    ADD");
       teasimg.append(button);
       price = document.createElement("p");
-      price.innerHTML = "$" +  Math.floor(Math.random() * 100) + 1; 
+      price.innerHTML = "$" +  Math.floor(Math.random() * 10) + 1; 
       teasimg.append(price);     
       wares.append(teasimg);
-    });      
-      fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=biscuits`)              //Swallowtail Tea API request
-      .then(response => response.json())                                                                                    //Parsed using JSON
-      .then(d => {                                                                                                          //then data is called
+    });
+    // Fetching images from the unsplash website, Then adding an event listener that the background image changes on hover, 
+    //Another event listener is also added so that the image changes back to the original once the mouse leaves the image 
+      fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=biscuits`)              
+      .then(response => response.json())                                                                                    
+      .then(d => {                                                                                                          
         let children = wares.querySelectorAll(".tealight");
-      d["results"].forEach((r, i) => {                                                                                      //Data is an array so forEach through
+      d["results"].forEach((r, i) => {                                                                                      
           console.log(d);          
           hovers[i] = `url(${r["urls"]["regular"]})`;
       });
       console.log(children);      
       children.forEach((e, i) => {
-          e.addEventListener("mouseover", function (event) {                                                                 // Checks if hovering over the code removes all of the active classes and adds it to the one  which has a hover
+          e.addEventListener("mouseover", function (event) {                                                                 
               children.forEach(e =>{
                   e.classList.remove("active")                                 
               });
               e.classList.add("active");
-                  e.style.backgroundImage = hovers[i];            
-              //}               
+                  e.style.backgroundImage = hovers[i];                          
           });     
-          e.addEventListener("mouseleave", function(event){        // Removes the mouse active class when the mouse isnt hovering over the text
+          e.addEventListener("mouseleave", function(event){        
               e.classList.remove("active");
               e.style.backgroundImage = after[i];
           }, false);

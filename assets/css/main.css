@@ -17,7 +17,8 @@ h1 {
     font-size: 80px;  
 }
 h3 {
-    font-size: 15px; 
+    font-size: 15px;
+    margin-top: 20px; 
 }
 
 h4 {
@@ -27,11 +28,13 @@ h4 {
 
 h5 {
     font-size: 18px; 
-    text-align: left;
-    
+    text-align: left;   
 }
 
-
+a[href] {
+    color: inherit;
+    text-decoration: none; 
+ }
 
 :root{
     --maindark: #53624E;
@@ -308,22 +311,19 @@ img{
     display: grid;
     width: 75%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 30vw);
     grid-column-gap: 40px;
     grid-row-gap: 0px;
     margin-left: auto;
-    margin-right: auto;
-   
+    margin-right: auto;  
 }
 /* This is used for the 3 images used in the Teas, Merch and Wares part on the home page*/
 .centeredmain {
     position: relative;
     font-family: Louize Display,Garamond,serif;
     text-align: center;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: hsl(0, 0%, 100%);
+    color: white;
+    margin-bottom: 20px;
+
 }
 
 .centeredmain h1{
@@ -331,11 +331,6 @@ img{
     margin-bottom: 35px;
 }
 
-.centeredmain h3{
-    border: var(--mainlight);
-    text-transform: uppercase;
-    font-size: large;
-}
 
 .centered {
     position: relative;
@@ -346,14 +341,8 @@ img{
     color: #FFFFFF;
 }
 
-.centered2 {
-    position: relative;
-    text-align: center;
-    margin-top: 15px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #FFFFFF;
+.white {
+    color: white;
 }
 
 
@@ -361,30 +350,41 @@ img{
     text-decoration: underline;
 }
 
-
+#one{
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/about_values_f13f2034-9acd-41df-a7a3-2cae150c79ac_650x.jpg?v=1526915323&auto=format&q=50&');
+  }
+#two{
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/DSC07022_650x.jpg?v=1526856532&auto=format&q=50&');
+  }
+#three{
+    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/home_brew_wares_650x.jpg?v=1526915416&auto=format&q=50&');
+  }
 
 
     
 .three1 { 
-    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/about_values_f13f2034-9acd-41df-a7a3-2cae150c79ac_650x.jpg?v=1526915323&auto=format&q=50&');
     background-size: cover;
     align-items:center;
     justify-content:center;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    height: 500px;
  }
 .three2 { 
     background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/DSC07022_650x.jpg?v=1526856532&auto=format&q=50&');
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content:center;
-    background-position: 50%;
+
  }
 .three3 { 
     background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/home_brew_wares_650x.jpg?v=1526915416&auto=format&q=50&');
-    background-size: cover;
+    display: flex;
     align-items:center;
     justify-content:center;
-    background-position: 50%;
-
+    flex-direction: column;
 }
 
 
@@ -637,20 +637,21 @@ img{
         font-size: 8vw;
     }
 
-    .three{
-        display: block;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 70vw); 
-    }
+     /* .three{
+        grid-template-columns: 1fr;
+    } 
     .three1{
         padding-bottom: 100%;
+        margin-bottom: 50px;
     }
     .three2{
         padding-bottom: 100%;
+        margin-bottom: 50px;
     }
     .three3{
         padding-bottom: 100%;
-    }
+        margin-bottom: 50px;
+    } */
 
     .teas{
         width: auto;
