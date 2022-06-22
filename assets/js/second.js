@@ -41,15 +41,13 @@ fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sR
     });
     // Fetching images from the unsplash website, Then adding an event listener that the background image changes on hover, 
     //Another event listener is also added so that the image changes back to the original once the mouse leaves the image 
-      fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=biscuits`)              
+      fetch(`${BASE_URL}/search/photos?client_id=IW3Vq65vykO9B-bgkgHAJOXo_txwwK4qBs_sRjQPMR4&query=coffee`)              
       .then(response => response.json())                                                                                    
       .then(d => {                                                                                                          
         let children = wares.querySelectorAll(".tealight");
       d["results"].forEach((r, i) => {                                                                                      
-          console.log(d);          
           hovers[i] = `url(${r["urls"]["regular"]})`;
       });
-      console.log(children);      
       children.forEach((e, i) => {
           e.addEventListener("mouseover", function (event) {                                                                 
               children.forEach(e =>{

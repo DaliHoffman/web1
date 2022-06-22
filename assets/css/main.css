@@ -66,11 +66,8 @@ a[href] {
     
 /* For the logo in the Navbar*/
 .logo { 
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    
+    padding: 10px;
+    height: auto;
 }
 
 
@@ -198,7 +195,6 @@ a[href] {
     background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/swatch-hero_2400x.jpg?v=1558564563&auto=format&q=50&);
 }
 
-/* */
 .centeredhead {
     position: relative;
     text-align: center;
@@ -264,7 +260,11 @@ a[href] {
 }
 
 
-
+.midfoot{
+    text-align: center;
+    font-size: smaller;
+    color: #666666;
+}
 
 img{
     width:100%
@@ -485,7 +485,6 @@ img{
 .footbod {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-column-gap: 20px;
@@ -494,6 +493,7 @@ img{
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 }
     
 
@@ -624,34 +624,25 @@ img{
         display: none;
     }
 
+
     h1{
         font-size: 40px;
         line-height: 48px;
     }
 
-    .teas p{
-        font-size: 16px;
+    img{
+        width: 133%;
     }
    
     .heading div{
         font-size: 8vw;
     }
 
-     /* .three{
+    .three{
         grid-template-columns: 1fr;
+        gap: 20px;
     } 
-    .three1{
-        padding-bottom: 100%;
-        margin-bottom: 50px;
-    }
-    .three2{
-        padding-bottom: 100%;
-        margin-bottom: 50px;
-    }
-    .three3{
-        padding-bottom: 100%;
-        margin-bottom: 50px;
-    } */
+
 
     .teas{
         width: auto;
