@@ -14,10 +14,11 @@ app.use(express.static('assets'))
 app.use("/", index_router)
 app.use("/wares", wares_router)
 app.use(compression()) // Using Compression to speed up the website
+app.use(expressLayouts)
+
 
 app.set('view engine', 'ejs')
 app.set('views', './views')             //Views are templates
-app.use(expressLayouts)
 
 
 //MVC is the popular framework to use. Model (data), View(Template), Controller does something to data and returns to view
