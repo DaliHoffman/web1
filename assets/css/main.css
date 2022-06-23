@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
     color: var(--maindark);
 }
+
 h1 {
     font-size: 80px;  
 }
@@ -23,7 +24,6 @@ h3 {
 
 h4 {
     font-size: 12px;
-
 }
 
 h5 {
@@ -34,7 +34,7 @@ h5 {
 a[href] {
     color: inherit;
     text-decoration: none; 
- }
+}
 
 :root{
     --maindark: #53624E;
@@ -42,14 +42,12 @@ a[href] {
 }
 
 
-
-
 #main{
     color: #F5F6F0;
     font-family: GT Pressura Mono, Roboto Mono,monospace;
 }
 
-/* This is for the navbar which appears on both of my pages */
+/* This is for the navbar which appears on my homepage */
 .navbar {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -60,8 +58,21 @@ a[href] {
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
-    }
+}
 
+/* For the navbar on the warespage */
+
+.navbar3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 75%;
+    align-items: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
 
     
 /* For the logo in the Navbar*/
@@ -69,9 +80,6 @@ a[href] {
     padding: 10px;
     height: auto;
 }
-
-
-
 
 
 /* Used in the navbar for the list and hiding overflow for when changing the size of the navbar to hide the excess full stops */
@@ -91,10 +99,12 @@ a[href] {
     display: flex;
     justify-content: center;
 }
+/* Used throughout the site for display flex */
 .flex2{
     display: flex;
 }
 
+/* used in the navbar  */
 .flex3{
     display: flex;
     font-size:medium;
@@ -165,6 +175,7 @@ a[href] {
     margin-top: -50px; 
     margin-bottom: 50px;   
 }
+/* SlideShow images font */
 
 .testmain {
     position: relative;
@@ -190,7 +201,7 @@ a[href] {
 }
 
 
-
+/* 3 images transitioned in the background */
 .wholesale{
     background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&=50&);
 }
@@ -211,8 +222,6 @@ a[href] {
     transform: translate(-50%, -50%);
     color: var(--maindark);
 }
-
-
 
 
 
@@ -449,8 +458,21 @@ img{
 .foothead h4:hover {
     text-decoration: underline;
 }
+/* Used on wares page to show the same thing can be achieved through using css */
 
 
+.beeswax { 
+    background-image:url('https://images.creativemarket.com/0.1.0/ps/3706510/1820/2719/m1/fpnw/wm1/qb2z8rylgnoocuoebsmwnqlsleiacwtg0cprqhz2fqlyvhctyogk7ni2wckv8xrw-.jpg?1512741631&s=61e0824c369f8ef59ff7efd2f9d6598a');
+    background-size: contain;
+    align-items:center;
+    justify-content:center;
+ }
+
+ .beeswax:hover{
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR25J3ohmM5HXNbi_XH-1-8PXf3m_F_cQiy0RPfEgcjRjj6VaRpYjajjIPExPHw0hEVU8w&usqp=CAU');
+ }
+
+/* grid used on the wares page */
 
 #warespage{
     display: grid;
@@ -512,7 +534,6 @@ img{
 	font-weight:bold;
 	padding:13px 13px;
 	text-decoration:none;
-	/* text-shadow:0px 1px 0px #f5f5f1; */
 }
 .buttonproducts:hover {
 	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
