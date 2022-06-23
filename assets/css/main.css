@@ -487,6 +487,7 @@ img{
     position: relative;
 }
 
+/* The first DIV on the WaresPage grid and how it was done */
 .louize{
     font-family: "Louize Display", Garamond, sans-serif;
 }
@@ -521,6 +522,7 @@ img{
     margin-left: 12.5%;
 }
 
+/* The buttons used throughout the WaresPage */
 .buttonproducts {
 	box-shadow:inset 0px 1px 0px 0px #f5f5f1;
 	background:tan;
@@ -544,6 +546,7 @@ img{
 	top:1px;
 }
 
+/* the images fetched throughout the WaresPage */
 .tealight { 
     background-size: cover;
     align-items:center;
@@ -577,6 +580,7 @@ img{
     color: #373F3D;
 }
 
+/* the second navbar used and formatted for a smaller screen */
 
 .navbar2 {
     display: grid;
