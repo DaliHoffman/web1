@@ -371,22 +371,6 @@ img{
     background-position: center;
     height: 500px;
  }
-.three2 { 
-    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/DSC07022_650x.jpg?v=1526856532&auto=format&q=50&');
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:center;
-
- }
-.three3 { 
-    background-image:url('https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/home_brew_wares_650x.jpg?v=1526915416&auto=format&q=50&');
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction: column;
-}
-
 
 
 
@@ -438,6 +422,10 @@ img{
     visibility: visible;
 }
 
+.mb3{
+    margin-bottom: 100px;
+}
+
 .margin {
     margin-bottom: 20px;
 }
@@ -446,6 +434,8 @@ img{
     font-size: 28px;
     color: #BCBEBA;
 }
+
+/* For the Join Button within the 1000 max media query on Homepage */
 
 .buttonbot {
     width: 100%;
@@ -459,6 +449,7 @@ img{
     text-transform: uppercase;
 }
 
+/* Used in the Footer menu */
  .foothead ul{
      list-style: none;
  }
@@ -468,10 +459,6 @@ img{
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    border-bottom:1px solid var(--mainlight); 
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    margin-top: 100px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -479,28 +466,13 @@ img{
 
 .topright{
     float: right;
-    padding-right: 20px;
 }
 
-.footbod {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    margin-top: 15px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-}
-    
+.borderbottom{
+    border-bottom:1px solid var(--mainlight); 
+} 
 
-.footbod ul{
-    list-style: none;
-}
-.footbod h4:hover {
+.foothead h4:hover {
     text-decoration: underline;
 }
 
@@ -549,18 +521,18 @@ img{
 	top:1px;
 }
 
- .tealight { 
+.tealight { 
     background-size: cover;
     align-items:center;
     justify-content:center;
     flex-direction: row;
  }
 
- .tealight image:hover { 
+.tealight image:hover { 
     text-decoration: underline;
  }
 
- .product_title{
+.product_title{
     left: 2em;
     flex-direction: row;
     font: size 16px;
@@ -574,7 +546,7 @@ img{
       text-decoration: underline;
   }
 
- .waresdesc {
+.waresdesc {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -595,7 +567,7 @@ img{
     padding: 40px;
     margin-bottom: 1000px;
     visibility: hidden;
-    }
+}
     
 
 
